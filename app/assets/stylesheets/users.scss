@@ -2,10 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .container {
-  border-style: dotted solid 1px;
+  border: 1px solid orange;
 }
 
 .profile_pic {
-  border-radius: 50%
+  text-align: right;
+  width: 50%;
+  float: left;
 }
+
+.img {
+  width: 150px; 
+  border-radius: 50%;  
+}
+
+.profile_info {
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+.yellow {
+  width: 4em;
+  border: 1px solid #FFA70D;
+  border-radius: 5%;
+  background-color: #FFA70D;
+  font-size: 2em;
+  color: white;
+}
+
+
+.profile_note {
+  text-align: left;
+}
+
+

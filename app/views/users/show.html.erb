@@ -1,19 +1,30 @@
 
 
-<div class=container">
-  <h3>
-  profile page
-  </h3>
-
-  <!-- user image -->
-  <img src="<%= @user.image %>" class="profile_pic" >
+<div class="container">
+  <div>
+    <h3>Profile</h3>
+  </div>
   <br>
+  <!--  profile info - img&details -->
+  <div class="profile">
+    <div class="profile_pic">
+      <img src="<%= @user.image %>" class="img">
+    </div>
+    <div class="profile_info">
+      <div class="yellow">Lola(username)</div>
+      <div class="yellow">e-mail</div>
+      <div class="yellow">city</div>
+    </div>
+  </div>
+  <br>
+
+  <!-- note -->
   <div class="profile_note">
     <p> Hello :/ </p>
   </div>
-  <input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>
   <!-- user's email -->
-  email: <%= @user.email %>
+    <input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>
+  <!--   email: <%= @user.email %> -->
 
 
 </div>
