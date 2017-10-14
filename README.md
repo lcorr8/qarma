@@ -4,7 +4,7 @@
 
 <!-- GIF? Image? -->
 
-<!-- Product description -->
+Qarma is an online platform to report and retrieve lost and found objects for travelers abroad.
 
 Frontend: HTML, CSS, JavaScript <br>
 Backend: Ruby on Rails
@@ -14,10 +14,10 @@ This project was built on October 14-15, 2017 as part of the [Geek Girls Carrots
 ## Key Features
 
 ## Requirements
-* [Ruby](http://www.ruby-lang.org/en/) (2.4 or higher)
-* Rails (5 or higher)
+* [Ruby](http://www.ruby-lang.org/en/) (v2.4 or higher)
+* Rails (v5 or higher)
 
-Rails Girls also has a great [installation guide](http://guides.railsgirls.com/install) to setup your software and developer environment.
+Rails Girls has a great [installation guide](http://guides.railsgirls.com/install) to setup your software and developer environment.
 
 ## Quickstart
 Here's how you can get up and running with this project.
