@@ -12,6 +12,7 @@
     <!-- make navigation bar -->
     <li><%= link_to "Sign up", new_user_registration_path %></li>
     <li><%= link_to "Sign in", new_user_session_path %></li>
+    <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
     <li><%= link_to "Sign out", destroy_user_session_path , :method => :delete, :class => "active" %></li>
     <!-- error/feedback displays -->
     <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
