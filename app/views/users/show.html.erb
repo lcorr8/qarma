@@ -1,15 +1,37 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <div class="white-container">
 
 
-<div class="">
-  <h1>
-  profile page
-  </h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="<%= @user.image << "?type=large" %>" class="profile-pic">
+      </div>
+    </div>
 
-  <!-- user image -->
-  <img src="<%= @user.image %>" >
-  <br>
-  <!-- user's email -->
-  email: <%= @user.email %>
-  
+    <% if @user %>
+
+          <div class="row top-buffer">
+            <div class="col-xs-12">
+              <div class="lost-note">
+              <!--add note here-->
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="return-instructions">
+        <!--add cont me and make me happy here-->
+        <p>Please click the link below to
+          email me if you find it! Thanks!</p>
+        <!--<input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>-->
+          <%= mail_to "me@domain.com", 'Email me :)', :class => "email-button" %>
+      </div>
+    </div>
+  </div>
 </div>
-
