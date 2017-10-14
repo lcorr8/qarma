@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Qarma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,15 +10,28 @@
   </head>
 
   <body>
-    <!-- make navigation bar -->
-    <li><%= link_to "Sign up", new_user_registration_path %></li>
-    <li><%= link_to "Sign in", new_user_session_path %></li>
-    <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
+  <div class="splash-container">
+    <%= yield %>
+    <% if !current_user  %>
+      <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class =>
+        "facebook-button" %>
+        <% end %>
+  </div>
+
+
+
+
+    <!-- navigation bar -->
+    <!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
+    <!--<li><%= link_to "Sign in", new_user_session_path %></li>-->
+
     <li><%= link_to "Sign out", destroy_user_session_path , :method => :delete, :class => "active" %></li>
-    <!-- error/feedback displays -->
+
+  <!-- error/feedback displays -->
     <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
     <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
     <%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
-    <%= yield %>
+
+
   </body>
 </html>
