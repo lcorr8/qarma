@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   # redirect after fb oauth login
   def after_sign_in_path_for(resource)
-  request.env['omniauth.origin'] || root_path
-end
+  user_path(current_user) || request.env['omniauth.origin']
+  end
 end
