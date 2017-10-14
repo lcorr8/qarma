@@ -1,24 +1,51 @@
-# README
+# Qarma
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- Slogan? -->
 
-Things you may want to cover:
+<!-- GIF? Image? -->
 
-* Ruby version
+<!-- Product description -->
 
-* System dependencies
+Frontend: HTML, CSS, JavaScript <br>
+Backend: Ruby on Rails
 
-* Configuration
+This project was built on October 14-15, 2017 as part of the [Geek Girls Carrots](http://www.hacklikeagirl.co/) Berlin Travel Hackathon.
 
-* Database creation
+## Key Features
 
-* Database initialization
+## Requirements
+* [Ruby](http://www.ruby-lang.org/en/) (2.4 or higher)
+* Rails (5 or higher)
 
-* How to run the test suite
+Rails Girls also has a great [installation guide](http://guides.railsgirls.com/install) to setup your software and developer environment.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Quickstart
+Here's how you can get up and running with this project.
 
-* Deployment instructions
+1. Clone this repository
+```
+git clone https://github.com/lcorr8/qarma.git
+```
 
-* ...
+2. Install dependencies
+```
+bundle install
+```
+
+3. Migrate database models
+```
+rake db:migrate
+```
+
+4. Run project locally
+```
+rails s
+```
+
+## What's Next?
+* Feature
+* Feature
+* Feature
+
+## The Team Behind Qarma
+[Laura Correa](https://github.com/lcorr8), [Hyeonjeong Lee](https://github.com/trander), [Carolyn Stransky](https://github.com/carolstran), Marianne Weidlich and Mirre.
