@@ -1,6 +1,6 @@
 
 
-<div class="">
+<div class=container">
   <h1>
   profile page
   </h1>
@@ -8,11 +8,13 @@
   <!-- user image -->
   <img src="<%= @user.image %>" >
   <br>
+  <div class="profile_note">
+    <p> Hello :/ </p>
+  </div>
+  <input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>
   <!-- user's email -->
   email: <%= @user.email %>
-  
-  <!-- user's note DONT USE IT YET -->
-  <!-- email: <%= @user.note %> -->
+
 
 </div>
 
