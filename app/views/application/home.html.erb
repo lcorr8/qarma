@@ -1,3 +1,15 @@
 <div class="home-container ">
-Add Registration page content here :)
+Splash page here :)
+<br>
+
+<% if current_user %>
+  Logged in!
+  <%= link_to "Go to profile", user_path(current_user) %>
+  <% else %>
+  Log in above ^ 
+  <% end %>
+
+ 
+    
+  
 </div>
