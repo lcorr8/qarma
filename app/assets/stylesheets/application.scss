@@ -1,0 +1,83 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//.app-container {
+//    background-color: darkorange;
+//    height: 100vh;
+//    width: 100vw;
+//}
+//
+//.logo-large {
+//    width: 100%;
+//    height: auto;
+//}
+//
+//.logo-large img {
+//    width: 30vw;
+//    height: auto;
+//    padding: 20px;
+//}
+
+body {
+    margin: 0;
+}
+
+h1, p {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    color: #FFF;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.slogan {
+    font-size: 25px;
+    margin: 40px;
+}
+
+.splash-container {
+    height: 100vh;
+    width: 100%;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a) no-repeat;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f7b733, #fc4a1a) no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 15%;
+    text-align: center;
+}
+
+.main-content {
+    width: 70%;
+    margin: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.facebook-button {
+    background-color: #003366;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+@media all and (max-width: 470px) and (min-width: 376px) {
+    .slogan {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 375px) and (min-width: 220px) {
+    .slogan {
+        font-size: 18px;
+    }
+}
