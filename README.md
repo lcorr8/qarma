@@ -4,7 +4,7 @@
 
 <!-- GIF? Image? -->
 
-Qarma is an online platform to report and retrieve lost and found objects for travelers abroad.
+Qarma is an online platform to report and retrieve lost & found objects for travelers abroad.
 
 Frontend: HTML, CSS, JavaScript <br>
 Backend: Ruby on Rails
@@ -25,6 +25,7 @@ Here's how you can get up and running with this project.
 1. Clone this repository
 ```
 git clone https://github.com/lcorr8/qarma.git
+cd qarma/
 ```
 
 2. Install dependencies
@@ -37,9 +38,10 @@ bundle install
 rake db:migrate
 ```
 
-4. Run project locally
+4. Run the project locally
 ```
 rails s
+# opens http://localhost:3000 in your browser
 ```
 
 ## What's Next?
@@ -48,4 +50,6 @@ rails s
 * Feature
 
 ## The Team Behind Qarma
-[Laura Correa](https://github.com/lcorr8), [Hyeonjeong Lee](https://github.com/trander), [Carolyn Stransky](https://github.com/carolstran), Marianne Weidlich and Mirre.
+**Code**: [Laura Correa](https://github.com/lcorr8), [Hyeonjeong Lee](https://github.com/trander), [Carolyn Stransky](https://github.com/carolstran)<br>
+**Design**: Marianne Weidlich<br>
+**PM**: [Mirre Snelting](https://twitter.com/mirresnelting)
