@@ -4,34 +4,43 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <img src="<%= @user.image << "?type=large" %>" class="profile-pic">
+        <img src="<%= @profile_user.image << "?type=large" %>" class="profile-pic">
       </div>
     </div>
 
-    <% if @user %>
 
-          <div class="row top-buffer">
-            <div class="col-xs-12">
-              <div class="lost-note">
-              <!--add note here-->
+    <div class="row top-buffer">
+      <div class="col-xs-12">
+        <div class="lost-note">
+          <% if @profile_user.note %>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <%= @profile_user.note %>
               </p>
-            </div>
-          </div>
+          <% else %>
+              <% if @user %>
+                  <p>
+                    <%= form_for(@user) do |f| %>
+                        <%= f.label 'Add a note about the item you lost!' %><br>
+                        <%= f.text_area :note, :placeholder => '...' %><br>
+                        <%= f.submit 'Save' %>
+                    <% end %>
+                  </p>
+              <% end %>
+          <% end %>
         </div>
-    <% end %>
+      </div>
+    </div>
 
 
     <div class="row">
       <div class="col-xs-12">
         <div class="return-instructions">
-        <!--add cont me and make me happy here-->
-        <p>Please click the link below to
-          email me if you find it! Thanks!</p>
-        <!--<input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>-->
-          <%= mail_to "me@domain.com", 'Email me :)', :class => "email-button" %>
+          <!--add cont me and make me happy here-->
+          <p>Please click the link below to
+            email me if you find it! Thanks!</p>
+          <!--<input type="button" value="Mail" onClick="window.location.href='mailto:someone@gmail.com';"></input>-->
+          <%= mail_to @profile_user.email, 'Email me :)', :class => "email-button" %>
+        </div>
       </div>
     </div>
   </div>
-</div>
