@@ -1,8 +1,9 @@
 # Qarma
 
-<!-- GIF? Image? -->
-
 Qarma is an online platform to report and retrieve lost & found objects for travelers abroad.
+
+<!-- GIF? -->
+![screen shot 2017-10-15 at 13 59 03](https://user-images.githubusercontent.com/26869552/31584567-0e96c792-b1b1-11e7-961f-131e7d0220f3.png)
 
 **Frontend**: HTML, CSS <br>
 **Backend**: Ruby on Rails
@@ -64,7 +65,7 @@ While we're definitely proud of what we accomplished in less than 36 hours, we h
 
 * A reward point system for people who find lost items, working name is "Qarma Points"
 
-* Eliminating the need to share any private information at all and facilitate the entire communication process between item owners and item finders 
+* Eliminating the need to share any private information at all and facilitate the entire communication process between item owners and item finders
 
 * Incorporating the GPS coordinates of finders so the owner can know where their item is in the world
 
