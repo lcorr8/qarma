@@ -12,6 +12,8 @@
 
           <div class="row top-buffer">
             <div class="col-xs-12">
+            <textarea type="text" maxlength="300" class="last-note">Type your note here!</textarea><br>
+            <%= mail_to "me@domain.com", 'Save', :class => "primary-button" %>
               <div class="lost-note">
               <!--add note here-->
               <p>

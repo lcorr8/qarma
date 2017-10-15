@@ -105,6 +105,18 @@ h1 {
     padding: 20px;
 }
 
+textarea {
+    border: solid 3px #FFA70D;
+    border-radius: 10px;
+    padding: 5rem;
+    height: 150px;
+    width: 85%;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
 .return-instructions {
 
 }
@@ -115,11 +127,22 @@ h1 {
     margin: 5rem;
 }
 
-.email-button {
+.primary-button {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     border-radius: 25px;
     padding: 10px 20px;
     color: #FFFFFF;
     background-color: #DF5A02;
+}
+
+.primary-button:hover {
+    background-color: #fcc420;
+    color: #DF5A02;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 //general styling
