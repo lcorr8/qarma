@@ -32,7 +32,7 @@ When something is found, the 'finder' can follow the code to the owner's public 
 
 Rails Girls has a great [installation guide](http://guides.railsgirls.com/install) to setup your software and developer environment.
 
-Additionally, you'll also need a Facebook authentication key—which can be provided by one of the admins.
+You'll also need a Facebook authentication key—which can be provided by one of the admins.
 
 ## Quickstart
 Here's how you can get up and running with this project.
@@ -62,11 +62,11 @@ rails s
 ## What's Next?
 While we're definitely proud of what we accomplished in less than 36 hours, we have big dreams for Qarma. Some of the future features we envision for this project include:
 
-* Reward point system for people who find lost items, working name is "Qarma Points"
+* A reward point system for people who find lost items, working name is "Qarma Points"
 
-* Incorporate GPS coordinates of finders so the owner can know where their item is in the world
+* Incorporating the GPS coordinates of finders so the owner can know where their item is in the world
 
-* Include credit card of registered users so mailing labels can be printed automatically and the lost item can be sent back
+* Allowing registered users to input credit card details so mailing labels can be printed automatically and the lost item can be easily sent back
 
 ## The Team Behind Qarma
 **Code**: [Laura Correa](https://github.com/lcorr8), [Hyeonjeong Lee](https://github.com/trander), [Carolyn Stransky](https://github.com/carolstran)<br>
