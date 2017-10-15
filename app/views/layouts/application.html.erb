@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Qarma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
   <head>
     <title>Qarma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <div class="splash-container">
-    <%= yield %>
-    <% if !current_user  %>
+<body>
+<div class="splash-container">
+  <%= yield %>
+  <% if !current_user %>
       <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class =>
-        "facebook-button" %>
-        <% end %>
-  </div>
+          "facebook-button" %>
+  <% end %>
+</div>
 
 
+<<<<<<< HEAD
     <!-- navigation bar -->
     <!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
     <!--<li><%= link_to "Sign in", new_user_session_path %></li>-->
+=======
+<!-- navigation bar -->
+<!--<li><%= link_to "Sign up", new_user_registration_path %></li>-->
+<!--<li><%= link_to "Sign in", new_user_session_path %></li>-->
 
-    <li><%= link_to "Sign out", destroy_user_session_path , :method => :delete, :class => "active" %></li>
+<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "active" %></li>
 
-  <!-- error/feedback displays -->
-    <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
-    <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
-    <%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
+<!-- error/feedback displays -->
+<%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
+<%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
+<%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
+>>>>>>> 8a7240f39b946f3ef119da91b9820d946b1c19f0
 
 
-  </body>
+</body>
 </html>
