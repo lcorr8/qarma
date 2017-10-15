@@ -70,6 +70,18 @@ h1 {
     margin-top: 15px;
 }
 
+// sign-out button
+.sign-out-btn {
+  background-color: #003366;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
 @media all and (max-width: 470px) and (min-width: 376px) {
     .slogan {
         font-size: 20px;
