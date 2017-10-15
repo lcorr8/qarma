@@ -64,6 +64,8 @@ While we're definitely proud of what we accomplished in less than 36 hours, we h
 
 * A reward point system for people who find lost items, working name is "Qarma Points"
 
+* Eliminating the need to share any private information at all and facilitate the entire communication process between item owners and item finders 
+
 * Incorporating the GPS coordinates of finders so the owner can know where their item is in the world
 
 * Allowing registered users to input credit card details so mailing labels can be printed automatically and the lost item can be easily sent back
