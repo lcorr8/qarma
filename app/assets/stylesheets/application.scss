@@ -60,6 +60,10 @@ h1 {
 }
 
 .facebook-button {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     background-color: #003366;
     color: #FFF;
     border: none;
@@ -68,6 +72,14 @@ h1 {
     border-radius: 25px;
     font-size: 16px;
     margin-top: 15px;
+}
+
+.facebook-button:hover {
+    background-color: #FFF;
+    color: #003366;
+    border: 3px #003366 solid;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 @media all and (max-width: 470px) and (min-width: 376px) {
