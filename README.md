@@ -71,4 +71,4 @@ While we're definitely proud of what we accomplished in less than 36 hours, we h
 ## The Team Behind Qarma
 **Code**: [Laura Correa](https://github.com/lcorr8), [Hyeonjeong Lee](https://github.com/trander), [Carolyn Stransky](https://github.com/carolstran)<br>
 **Design**: [Marianne Weidlich](https://github.com/Triluna)<br>
-**PM**: [Mirre Snelting](https://twitter.com/mirresnelting)
+**PM**: [Mirre Snelting](https://github.com/mirre777)
